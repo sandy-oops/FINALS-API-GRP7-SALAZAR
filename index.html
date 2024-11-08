@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Swiper</title>
+</head>
+<body>
+    <div id="swipers-container">
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                    <img src="Picture/Artisan Bread.jpg" alt="Card 1" class="card-image">
+                    <p>Card 1</p>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="Picture/Artisan Bread1.jpg" alt="Card 2" class="card-image">
+                    <p>Card 2</p>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="Picture/Artisan Bread2.jpg" alt="Card 3" class="card-image">
+                    <p>Card 3</p>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="Picture/Artisan Bread3.jpg" alt="Card 4" class="card-image">
+                    <p>Card 4</p>
+                </div>
+            </div>
+            <button class="swiper-button prev" onclick="prevSlide('swiper1')">&#10094;</button>
+            <button class="swiper-button next" onclick="nextSlide('swiper1')">&#10095;</button>
+        </div>
+
+        <div class="swiper-container" id="swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                    <img src="Picture/Cupcakes1.jpg" alt="Card 1" class="card-image">
+                    <p>Card 1</p>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="Picture/Blueberry Muffins.webp" alt="Card 2" class="card-image">
+                    <p>Card 2</p>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="Picture/Chocolate Cake3.jpg" alt="Card 3" class="card-image">
+                    <p>Card 3</p>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="Picture/Fresh Croissant.jpg" alt="Card 4" class="card-image">
+                    <p>Card 4</p>
+                </div>
+            </div>
+            <button class="swiper-button prev" onclick="prevSlide('swiper2')">&#10094;</button>
+            <button class="swiper-button next" onclick="nextSlide('swiper2')">&#10095;</button>
+        </div>
+    </div>
+
+    <section id="GET">
+        <form action="feedback.php" method="get">
+            <fieldset>
+                <legend>GET Request</legend>
+                <label for="test">Test Query:</label>
+                <input type="text" id="test" name="test" required>
+                <button type="submit">Send GET Request</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="share">
+        <h2>Share This Page</h2>
+        <p>Spread the word about this awesome page!</p>
+        <div class="share-links">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank">
+                <img src="Picture/Telegram.webp" alt="Telegram" class="social-icon"> Share on Telegram
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=YOUR_URL" target="_blank">
+                <img src="Picture/Github.png" alt="Twitter" class="social-icon"> Share on Twitter
+            </a>
+            <a href="https://www.tiktok.com/share?url=YOUR_URL" target="_blank">
+                <img src="Picture/Gmail.webp" alt="TikTok" class="social-icon"> Share on TikTok
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
